@@ -1,0 +1,32 @@
+﻿
+
+0) Dans la vue Home/Index Créer des balises <a> (ou @Html.ActionLink) vers l'action DetailFormation pour les 
+6 formations dans le fichier FormationManager.
+Vérifier en lancant le projet que le lien fonctionne 
+
+
+1) Ajouter une route pour afficher les details d'une formation de cette manière :
+
+http://domaine/formations/<categorie>/<nomSeo>
+
+par exemple 
+
+http://domaine/formations/art-de-vivre/balai-pas-bali
+
+2) Essayer de faire de meme avec cette syntaxe :
+http://domaine/formations/<categorie>-<nomSeo>
+(tiret au lieu de / entre catégorie et nomseo)
+Analyser pourquoi cela ne fonctionne pas pour certaines URLs parmi les 6 formations de FormationManager
+(et revenir à la route définie à la question 1)
+
+3) Que se passe t il si on va sur cette url :
+http://domaine/formations/
+
+Rajouter une route pour matcher  http://domaine/formations/
+vers l'Action ToutesLesFormations
+
+4) Rajouter une route pour matcher  http://domaine/formations/<categorie>
+vers l'Action FormationParCatégorie
+par exemple http://domaine/formations/art-de-vivre
+
+
